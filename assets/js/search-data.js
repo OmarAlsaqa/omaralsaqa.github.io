@@ -405,16 +405,14 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-our-work-multimodal-system-for-driver-distraction-detection-and-elimination-is-now-published-check-it-out-on-ieee-xplore",
+          title: 'Our work “Multimodal System for Driver Distraction Detection and Elimination” is now published....',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+          section: "News",},{id: "news-i-m-excited-to-share-that-i-have-started-my-thesis-based-master-s-degree-at-wilfrid-laurier-university-focusing-on-geometry-aware-gnns",
+          title: 'I’m excited to share that I have started my Thesis-based Master’s degree at...',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-our-work-on-bandit-layer-importance-sampling-bliss-for-gnns-was-accepted-to-the-neurips-2025-workshop-check-out-the-openreview-link",
+          title: 'Our work on Bandit Layer Importance Sampling (BLISS) for GNNs was accepted to...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
