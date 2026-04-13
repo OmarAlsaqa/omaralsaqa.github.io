@@ -99,7 +99,7 @@ cv:
       - title: GeoViG, Geometry-Aware Graph Reasoning for Mobile Vision Tasks
         year: 2026
         summary: Under Review, IEEE EMBC 2026.
-      - title: BLISS, Bandit Layer Importance Sampling Strategy for Training of GNNs
+      - title: BLISS, Bandit Layer Importance Sampling Strategy for Efficient Training of Graph Neural Networks
         year: 2025
         summary: NeurIPS 2025, MusIML Workshop.
       - title: Multimodal System for Driver Distraction Detection and Elimination
