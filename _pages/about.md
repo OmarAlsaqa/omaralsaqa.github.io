@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Graduate Student (Thesis-based) @ Wilfrid Laurier University
 
 profile:
   align: right
@@ -21,13 +21,15 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a Graduate Student (Thesis-based) at Wilfrid Laurier University in Waterloo, Canada, working under the supervision of [Prof. Emad A. Mohammed](https://scholar.google.com/citations?user=CYUi14EAAAAJ&hl=en). My research focus is on **Geometry-Aware Deep Learning** and **Graph Neural Networks (GNNs)**, specifically focusing on scaling vision-based graph architectures.
+
+Before joining Laurier, I worked as a **Machine Learning Engineer at LightRing**, where I developed real-time traffic monitoring systems and conversational agents using LangGraph and Whisper. I also spent over two years as a **Data Scientist at Orange Innovation Egypt**, building NLP-based ticket routing systems and exploring transformer-based tracking for autonomous systems.
+
+I hold a Bachelor's degree in **Computer and Systems Engineering** from Mansoura University, Egypt, where I graduated with Honors.
 
 My research interests include Mathematical Foundations of Deep Learning, Graph Neural Networks (algorithmic scalability, sampling), Computer Vision (efficient architectures, geometric reasoning, 2D/3D generation), and Parallel & GPU Computing.
-
-I am currently pursuing my Master's of Applied Computing (Thesis based) at Wilfrid Laurier University in Waterloo, Canada, under the supervision of Prof. Emad A. Mohammed. Previously, I worked as a Machine Learning Engineer at LightRing and a Data Scientist at Orange Innovation Egypt.
