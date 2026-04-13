@@ -136,27 +136,17 @@ cv:
         issuer: Stanford
 
     Volunteering Experience:
-      - company: IEEE Egypt Section
-        position: ESBC, EED (Egyptian Engineering Day) and IEEEXtreme Volunteer
-        start_date: 2017-12-01
-        end_date: 2020-09-01
+      - label: "IEEE Egypt Section (2017 - 2020)"
+        details: "ESBC, EED (Egyptian Engineering Day) and IEEEXtreme Volunteer."
 
-      - company: IEEE Mansoura Student Branch
-        position: Multimedia Head, Project Manager (Career Insider 5.0), and Volunteer (FR, PR, HR)
-        start_date: 2017-03-01
-        end_date: 2020-09-01
+      - label: "IEEE Mansoura Student Branch (2017 - 2020)"
+        details: "Multimedia Head, Project Manager (Career Insider 5.0), and Volunteer (FR, PR, HR)."
 
-      - company: CAT Reloaded
-        position: Machine Learning and Graphic circle member
-        start_date: 2017-08-01
-        end_date: 2019-07-31
+      - label: "CAT Reloaded (2017 - 2019)"
+        details: "Machine Learning and Graphic circle member."
 
-      - company: COP in MyCity Mansoura
-        position: Delegate
-        start_date: 2019-04-01
-        end_date: 2020-09-30
+      - label: "COP in MyCity Mansoura (2019 - 2020)"
+        details: "Delegate."
 
-      - company: HULT PRIZE Mansoura
-        position: Partnership Development member
-        start_date: 2019-09-01
-        end_date: 2020-09-30
+      - label: "HULT PRIZE Mansoura (2019 - 2020)"
+        details: "Partnership Development member."
