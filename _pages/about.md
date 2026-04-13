@@ -11,6 +11,7 @@ profile:
   more_info: >
     <p>Waterloo, ON, Canada</p>
     <p><a href="mailto:o.alsaqa@gmail.com">o.alsaqa@gmail.com</a></p>
+    <p><a href="tel:+14163990632">+1 416-399-0632</a></p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page

@@ -1,15 +1,27 @@
 cv:
   name: Omar Alsaqa
-  label: Machine Learning Researcher
+  label: Machine Learning Engineer | Research Scientist
   email: o.alsaqa@gmail.com
+  phone: "+1 416-399-0632"
   location: Waterloo, ON, Canada
   image: prof_pic.jpg
-  summary: Mathematical Foundations of Deep Learning, Graph Neural Networks (algorithmic scalability, sampling), Computer Vision (efficient architectures, geometric reasoning, 2D/3D generation), and Parallel & GPU Computing.
+  summary: Research-driven Machine Learning Engineer with 4+ years of experience across industry and academia, specializing in Computer Vision, Graph Neural Networks (GNNs), and Generative AI. Proven track record of developing production-grade AI pipelines (MLOps) and publishing at top-tier venues including NeurIPS workshops and IEEE conferences.
 
   address:
     city: Waterloo
     region: Ontario
     countryCode: CA
+
+  social_networks:
+    - network: LinkedIn
+      username: omaralsaqa
+      url: https://www.linkedin.com/in/omaralsaqa/
+    - network: GitHub
+      username: OmarAlsaqa
+      url: https://github.com/OmarAlsaqa
+    - network: Google Scholar
+      username: Omar Alsaqa
+      url: https://scholar.google.ca/citations?hl=en&user=JE66AmMAAAAJ
 
   sections:
     Education:
@@ -21,9 +33,10 @@ cv:
         end_date: 2026-04-30
         score: "4.0/4.0"
         highlights:
-          - "Thesis: Developed an efficient Vision GNN using explicit Geometric Deep Learning via dynamic diffusion-distance pooling."
-          - "Relevant Coursework: Advanced Parallel Programming, Advanced Machine Learning, Practical Algorithm Design, Applied Cryptography."
-          - "Teaching Assistantships: Artificial Intelligence, Data Structures."
+          - "Thesis: Developed a novel optimized hierarchical Graph Neural Network for vision tasks, by designing a pure GNN layer that emulates depthwise separable convolutions."
+          - "Supervisor: Prof. Emad A. Mohammed."
+          - "Relevant Coursework: Advanced Parallel Programming (CP631), Advanced Machine Learning (CP640), Practical Algorithm Design (CP600), Applied Cryptography (CP614)."
+          - "Teaching Assistantships: Artificial Intelligence (CP468), Data Structures (CP264)."
 
       - institution: Mansoura University
         location: Mansoura, Egypt
@@ -40,8 +53,10 @@ cv:
         start_date: 2023-09-01
         end_date: 2025-05-31
         highlights:
-          - "Developed a real-time system for traffic monitoring and automated FTTH network design using Graph Neural Networks."
-          - "Engineered a Multi-Agent assistant bot using LangGraph, and fine-tuned Whisper for Arabic speech recognition."
+          - "Developed a Highway vehicle speed estimation and road analysis system (83% accuracy in real-time)."
+          - "Automated the FTTH Design Process using GNNs with Setics Sttar, reducing manual design time by 70% (delivered as Windows App)."
+          - "Engineered a Multi-Agent assistant bot for the World Bank using LangGraph and Gemini API; implemented intelligent agent routing."
+          - "Fine-tuned Whisper for Saudi dialect speech recognition, improving WER by 3%."
 
       - company: Fatima Fellowship
         position: Research Fellow
@@ -49,7 +64,8 @@ cv:
         start_date: 2022-04-01
         end_date: 2024-09-30
         highlights:
-          - "Researched unbiased GNN importance sampling strategies, accepted to a NeurIPS 2025 workshop."
+          - "Developed BLISS (Bandit Sampling) for GNNs using DGL, improving training speed up to 15% and accuracy up to 18%."
+          - "Work accepted at the MusIML workshop at NeurIPS 2025."
 
       - company: Orange Innovation Egypt
         position: Data Scientist
@@ -57,8 +73,10 @@ cv:
         start_date: 2021-11-01
         end_date: 2024-01-31
         highlights:
-          - "Developed scalable MLOps pipelines (MLflow) and automated NLP-based ticket routing, reducing latency by 60%."
-          - "Researched transformer-based Multiple Object Tracking (MOT) with 3D shape prediction and OCR applications."
+          - "Built MLOps Pipelines using MLflow, DVC, and Docker with real-time monitoring via Prometheus and Grafana."
+          - "Automated ticket routing for France Business Operations (76% accuracy), reducing latency by 60%."
+          - "Researched transformer-based Multiple Object Tracking (MOT) with 3D shape prediction."
+          - "Deployed computer vision systems for plant disease detection and industrial OCR tracking (dot-matrix font)."
 
       - company: Intixel
         position: Computer Vision Intern
@@ -66,7 +84,7 @@ cv:
         start_date: 2020-07-01
         end_date: 2020-09-30
         highlights:
-          - "Explored U-Net, GAN, auto-encoder to segment breast cancer micro-calcification using the DDSM-CBIS dataset."
+          - "Architected a segmentation system for breast cancer micro-calcification using U-Net and GANs on DDSM-CBIS dataset."
 
       - company: Valeo
         position: Deep Learning Intern
@@ -74,21 +92,10 @@ cv:
         start_date: 2019-09-01
         end_date: 2020-07-31
         highlights:
-          - "Developed a multimodal driver distraction monitoring system, won 2nd Place at the 2020 Dell Technologies Competition."
-
-    Awards:
-      - title: 2nd Place, 2020 Dell Technologies Competition
-        date: 2020-07-01
-        awarder: Dell Technologies
-        summary: Won for the development of a multimodal driver distraction monitoring system.
+          - "Developed a car command system and monitoring system for driver distraction."
+          - "2nd Place winner of the 2020 Dell Technologies Envision the Future Competition."
 
     Publications:
-      - title: GRecNet, Gated Recurrent Message Passing for Depth-Invariant GNNs
-        year: 2026
-        summary: Work in Progress.
-      - title: Latent Graph Diffusion for Generative 2D/3D Modeling
-        year: 2026
-        summary: Work in Progress.
       - title: GeoViG, Geometry-Aware Graph Reasoning for Mobile Vision Tasks
         year: 2026
         summary: Under Review, IEEE EMBC 2026.
@@ -99,21 +106,41 @@ cv:
         year: 2022
         summary: IEEE Access, 2022.
 
+    Projects:
+      - name: Parallel Classical vs. Graph-Based Image Denoising
+        summary: CUDA kernels for up to 25x GPU speedup compared to single-threaded CPU baselines.
+        url: https://github.com/OmarAlsaqa/parallel_classical_vs_graph_denoising
+      - name: Neural Machine Translation (Google Trax)
+        summary: Reproduced transformer performance; original PR contributor to Google Trax.
+        url: https://github.com/google/trax/pull/1625
+      - name: Multi-Agent LLM Automation Pipeline
+        summary: Modular graph-based system using LangGraph, Gemini, and Jina AI.
+        url: https://github.com/OmarAlsaqa/llm_router
+
     Skills:
       - name: Languages
-        level: Expert
-        keywords: "Python, C++, C, CUDA"
+        keywords: "Python, C++, C, CUDA, SQL"
       - name: Frameworks
-        level: Expert
-        keywords: "PyTorch, DGL, PyG"
+        keywords: "PyTorch, TensorFlow, LangGraph, Jina AI, Scikit-learn, OpenCV, HuggingFace, DGL, PyG"
       - name: Tools
-        level: Expert
-        keywords: "Docker, Git, MLflow"
+        keywords: "Linux, Docker, Kubernetes, Git, MLflow, DVC, W&B, Prometheus, Grafana"
 
-    Technical Skills:
-      - label: "Languages"
-        details: "Python, C++, C, CUDA"
-      - label: "Frameworks"
-        details: "PyTorch, DGL, PyG"
-      - label: "Tools"
-        details: "Docker, Git, MLflow"
+    Certificates:
+      - name: Deep Learning Specialization
+        issuer: Coursera
+      - name: Machine Learning with Graphs (CS224W)
+        issuer: Stanford
+      - name: NLP with Deep Learning (CS224n)
+        issuer: Stanford
+      - name: Computer Vision (CS231n)
+        issuer: Stanford
+
+    Volunteer:
+      - company: IEEE Mansoura Student Branch
+        position: Head of Multimedia Committee & Project Manager
+        start_date: 2017-03-01
+        end_date: 2020-09-01
+      - company: IEEE Egypt Section
+        position: EED & IEEEXtreme Volunteer
+        start_date: 2017-12-01
+        end_date: 2020-09-01
