@@ -135,12 +135,28 @@ cv:
       - name: Computer Vision (CS231n)
         issuer: Stanford
 
-    Volunteer:
-      - company: IEEE Mansoura Student Branch
-        position: Head of Multimedia Committee & Project Manager
-        start_date: 2017-03-01
-        end_date: 2020-09-01
+    Volunteering Experience:
       - company: IEEE Egypt Section
-        position: EED & IEEEXtreme Volunteer
+        position: ESBC, EED (Egyptian Engineering Day) and IEEEXtreme Volunteer
         start_date: 2017-12-01
         end_date: 2020-09-01
+
+      - company: IEEE Mansoura Student Branch
+        position: Multimedia Head, Project Manager (Career Insider 5.0), and Volunteer (FR, PR, HR)
+        start_date: 2017-03-01
+        end_date: 2020-09-01
+
+      - company: CAT Reloaded
+        position: Machine Learning and Graphic circle member
+        start_date: 2017-08-01
+        end_date: 2019-07-31
+
+      - company: COP in MyCity Mansoura
+        position: Delegate
+        start_date: 2019-04-01
+        end_date: 2020-09-30
+
+      - company: HULT PRIZE Mansoura
+        position: Partnership Development member
+        start_date: 2019-09-01
+        end_date: 2020-09-30
