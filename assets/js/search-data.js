@@ -397,8 +397,8 @@ ninja.data = [{
           section: "News",},{id: "news-i-m-excited-to-share-that-i-have-started-my-thesis-based-master-s-degree-at-wilfrid-laurier-university-focusing-on-geometry-aware-gnns",
           title: 'I’m excited to share that I have started my Thesis-based Master’s degree at...',
           description: "",
-          section: "News",},{id: "news-our-work-on-bandit-layer-importance-sampling-bliss-for-gnns-was-accepted-to-the-neurips-2025-workshop-check-out-the-openreview-link",
-          title: 'Our work on Bandit Layer Importance Sampling (BLISS) for GNNs was accepted to...',
+          section: "News",},{id: "news-our-paper-bliss-bandit-layer-importance-sampling-strategy-for-efficient-training-of-graph-neural-networks-by-omar-alsaqa-linh-thi-hoang-and-muhammed-fatih-balin-was-accepted-to-the-neurips-2025-musiml-workshop-check-out-the-openreview-link",
+          title: 'Our paper “BLISS: Bandit Layer Importance Sampling Strategy for Efficient Training of Graph...',
           description: "",
           section: "News",},{id: "news-i-am-happy-to-announce-that-i-have-successfully-defended-my-master-s-thesis-on-geometry-aware-vision-gnns-at-wilfrid-laurier-university-special-thanks-to-my-supervisor-prof-emad-a-mohammed-and-my-committee",
           title: 'I am happy to announce that I have successfully defended my Master’s thesis...',
@@ -492,6 +492,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://github.com/OmarAlsaqa", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/omaralsaqa", "_blank");
         },
       },{
       id: 'light-theme',
