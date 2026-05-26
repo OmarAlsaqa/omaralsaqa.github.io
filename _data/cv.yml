@@ -47,6 +47,15 @@ cv:
         score: "Very Good with Honors (83.44%)"
 
     Experience:
+      - company: Toronto Metropolitan University
+        position: Research Assistant
+        location: Toronto, Canada
+        start_date: 2026-05-05
+        end_date: Present
+        highlights:
+          - "Supervisor: Dr. Rasha Kashef."
+          - "Department of Electrical, Computer, & Biomedical Engineering."
+
       - company: LightRing
         position: Machine Learning Engineer
         location: Remote
@@ -96,15 +105,21 @@ cv:
           - "2nd Place winner of the 2020 Dell Technologies Envision the Future Competition."
 
     Publications:
-      - title: GeoViG, Geometry-Aware Graph Reasoning for Mobile Vision Tasks
+      - title: "GeoViG: Geometry-Aware Graph Reasoning for Mobile Vision Tasks in Natural and Medical Images"
         year: 2026
-        summary: Under Review, IEEE EMBC 2026.
+        summary: Accepted, IEEE EMBC 2026.
       - title: BLISS, Bandit Layer Importance Sampling Strategy for Efficient Training of Graph Neural Networks
         year: 2025
         summary: NeurIPS 2025, MusIML Workshop.
       - title: Multimodal System for Driver Distraction Detection and Elimination
         year: 2022
         summary: IEEE Access, 2022.
+
+    Honors and Awards:
+      - title: Award for Outstanding Work at the Graduate Level
+        awarder: Wilfrid Laurier University
+        date: 2026-05-19
+        summary: Selected to receive the award at the Spring 2026 convocation ceremony.
 
     Projects:
       - name: Parallel Classical vs. Graph-Based Image Denoising
@@ -134,6 +149,12 @@ cv:
         issuer: Stanford
       - name: Computer Vision (CS231n)
         issuer: Stanford
+
+    Languages:
+      - name: Arabic
+        summary: Native
+      - name: English
+        summary: Professional Working Proficiency (CELPIP General Average: 9, May 2026)
 
     Volunteering Experience:
       - label: "IEEE Egypt Section (2017 - 2020)"
