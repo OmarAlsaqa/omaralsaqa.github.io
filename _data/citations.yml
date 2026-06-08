@@ -1,6 +1,10 @@
 metadata:
-  last_updated: '2026-04-22'
+  last_updated: '2026-06-08'
 papers:
+  JE66AmMAAAAJ:d1gkVwhDpl0C:
+    citations: 0
+    title: 'GeoViG and PureViG: geometry-aware architectures for efficient computer vision'
+    year: '2026'
   JE66AmMAAAAJ:u-x6o8ySG0sC:
     citations: 0
     title: 'BLISS: Bandit Layer Importance Sampling Strategy for Efficient Training of Graph Neural Networks'
