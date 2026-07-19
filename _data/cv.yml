@@ -47,14 +47,15 @@ cv:
         score: "Very Good with Honors (83.44%)"
 
     Experience:
-      - company: Toronto Metropolitan University
+      - company: Toronto Metropolitan University (Mitacs Accelerate Internship, with FenderAI)
         position: Research Assistant
         location: Toronto, Canada
         start_date: 2026-05-05
-        end_date: Present
+        end_date: 2026-07-16
         highlights:
           - "Supervisor: Dr. Rasha Kashef."
           - "Department of Electrical, Computer, & Biomedical Engineering."
+          - "Developed an optimized OCR system for an automated verification pipeline, with more than 3x speedup."
 
       - company: LightRing
         position: Machine Learning Engineer
