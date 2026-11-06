@@ -50,6 +50,53 @@
     applyTheme(getSavedTheme());
   }
 
+  // Dynamically load Giscus comments with current active theme
+  function initGiscus() {
+    const container = document.getElementById('giscus-container');
+    if (!container) return;
+    const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+    const giscusTheme = currentTheme === 'light' ? 'light' : 'dark_dimmed';
+    const script = document.createElement('script');
+    script.src = 'https://giscus.app/client.js';
+    script.setAttribute('data-repo', 'OmarAlsaqa/omaralsaqa.github.io');
+    script.setAttribute('data-repo-id', 'R_kgDOHz1kSg');
+    script.setAttribute('data-category', 'General');
+    script.setAttribute('data-category-id', '');
+    script.setAttribute('data-mapping', 'pathname');
+    script.setAttribute('data-strict', '0');
+    script.setAttribute('data-reactions-enabled', '1');
+    script.setAttribute('data-emit-metadata', '0');
+    script.setAttribute('data-input-position', 'bottom');
+    script.setAttribute('data-theme', giscusTheme);
+    script.setAttribute('data-lang', 'en');
+    script.crossOrigin = 'anonymous';
+    script.async = true;
+    container.appendChild(script);
+  }
+
+  if (document.readyState === 'loading') {
+    window.addEventListener('DOMContentLoaded', initGiscus);
+  } else {
+    initGiscus();
+  }
+
+  // Listen for Giscus ready message to guarantee theme synchronization
+  window.addEventListener('message', (event) => {
+    if (event.origin !== 'https://giscus.app') return;
+    if (!(typeof event.data === 'object' && event.data.giscus)) return;
+    const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+    const giscusFrame = document.querySelector('iframe.giscus-frame');
+    if (giscusFrame && giscusFrame.contentWindow) {
+      giscusFrame.contentWindow.postMessage({
+        giscus: {
+          setConfig: {
+            theme: currentTheme === 'light' ? 'light' : 'dark_dimmed'
+          }
+        }
+      }, 'https://giscus.app');
+    }
+  });
+
   // Check URL param ?scroll=Y for instant scroll position
   const urlScroll = urlParams.get('scroll');
   if (urlScroll) {
