@@ -1,0 +1,59 @@
+baseURL = 'https://omaralsaqa.github.io/'
+defaultContentLanguage = 'en'
+locale = 'en-US'
+title = 'Omar Alsaqa'
+
+[params]
+  author = 'Omar Alsaqa'
+  alt_name = 'Omar Ismail'
+  tagline = 'Machine Learning Researcher'
+  focus = 'Geometry-Aware Deep Learning & Graph Neural Networks'
+  location = 'Waterloo, ON, Canada'
+  email = 'o.alsaqa@gmail.com'
+  phone = '+1 416-399-0632'
+  scholar = 'https://scholar.google.com/citations?user=JE66AmMAAAAJ'
+  github = 'https://github.com/OmarAlsaqa'
+  linkedin = 'https://www.linkedin.com/in/omaralsaqa'
+  avatar = 'img/prof_pic.jpg'
+  enable_3d_mesh = false
+
+[menu]
+  [[menu.main]]
+    identifier = 'about'
+    name = 'About'
+    url = '/'
+    weight = 1
+
+  [[menu.main]]
+    identifier = 'publications'
+    name = 'Publications'
+    url = '/publications/'
+    weight = 2
+
+  [[menu.main]]
+    identifier = 'news'
+    name = 'News'
+    url = '/news/'
+    weight = 3
+
+  [[menu.main]]
+    identifier = 'posts'
+    name = 'Blog'
+    url = '/posts/'
+    weight = 4
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)'], ['$', '$']]
+  [markup.highlight]
+    noClasses = false
+    lineNos = true
+    lineNumbersInTable = false
+    guessSyntax = true

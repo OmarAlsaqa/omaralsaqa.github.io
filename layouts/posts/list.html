@@ -1,0 +1,44 @@
+{{ define "main" }}
+<div class="container page-content">
+  <div class="section-top-row" style="margin-bottom: 2rem;">
+    <div>
+      <h1 class="hero-name" style="font-size: 2.4rem; margin-bottom: 0.5rem;">Research Blog</h1>
+      <p style="color: var(--text-secondary); font-size: 1.05rem;">
+        Technical deep-dives, thoughts on geometric deep learning, and research notes.
+      </p>
+    </div>
+  </div>
+
+  <div class="post-list">
+    {{ range .Pages }}
+      <article class="post-entry">
+        <div class="post-meta">
+          <span>{{ .Date.Format "January 2, 2006" }}</span>
+          <span>•</span>
+          <span>{{ .ReadingTime }} min read</span>
+          {{ with .Params.tags }}
+            <span>•</span>
+            {{ range . }}
+              <a href="/tags/{{ . | urlize }}/" class="tag-pill">{{ . }}</a>
+            {{ end }}
+          {{ end }}
+        </div>
+
+        <h2 class="post-title">
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h2>
+
+        <p class="post-excerpt">
+          {{ with .Description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}
+        </p>
+
+        <div style="margin-top: 0.85rem;">
+          <a href="{{ .RelPermalink }}" class="action-btn">Read Post →</a>
+        </div>
+      </article>
+    {{ else }}
+      <p style="color: var(--text-muted);">No blog posts published yet.</p>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

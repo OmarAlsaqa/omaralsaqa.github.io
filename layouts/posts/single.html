@@ -1,0 +1,85 @@
+{{ define "main" }}
+<div class="container-post page-content">
+  <div class="post-layout">
+    <!-- Main Article Column -->
+    <article class="post-main">
+      <header class="post-header">
+        <div class="post-meta">
+          <a href="/posts/">← All Posts</a>
+          <span>•</span>
+          <span>{{ .Date.Format "January 2, 2006" }}</span>
+          <span>•</span>
+          <span>{{ .ReadingTime }} min read</span>
+        </div>
+
+        <h1 class="hero-name post-title">
+          {{ .Title }}
+        </h1>
+
+        {{ with .Description }}
+          <p class="post-lead">
+            {{ . }}
+          </p>
+        {{ end }}
+
+        {{ with .Params.tags }}
+          <div class="post-tags">
+            {{ range . }}
+              <a href="/tags/{{ . | urlize }}/" class="tag-pill">{{ . }}</a>
+            {{ end }}
+          </div>
+        {{ end }}
+      </header>
+
+      {{ if gt (len .TableOfContents) 35 }}
+      <!-- Mobile / Small-screen Table of Contents -->
+      <details class="mobile-toc">
+        <summary>Table of Contents</summary>
+        <div class="toc-body">
+          {{ .TableOfContents }}
+        </div>
+      </details>
+      {{ end }}
+
+      <!-- Pure Markdown Simplicity Body -->
+      <div class="markdown-content">
+        {{ .Content }}
+      </div>
+
+      <!-- Reply / Discussion Section -->
+      <section class="post-replies" id="comments">
+        <div class="replies-header">
+          <div class="replies-title-wrap">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            <h3 class="replies-title">Discussion & Replies</h3>
+          </div>
+          <p class="replies-subtitle">Leave thoughts, questions, or ideas. Powered by GitHub Discussions.</p>
+        </div>
+
+        <!-- Giscus Comments Container -->
+        <div class="giscus" id="giscus-container">
+          <div class="giscus-placeholder" id="giscus-placeholder">
+            <p><strong>Reply to this post:</strong> This blog supports native GitHub Discussions comments via Giscus.</p>
+            <p class="small-text">Once GitHub Discussions are activated for <code>OmarAlsaqa/omaralsaqa.github.io</code>, reader replies and emoji reactions will seamlessly render here with automatic theme matching.</p>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <!-- Desktop Sticky Right-hand Table of Contents -->
+    {{ if gt (len .TableOfContents) 35 }}
+    <aside class="post-toc-sidebar" aria-label="Table of Contents">
+      <div class="post-toc-sticky">
+        <div class="toc-sidebar-header">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+          <span>Contents</span>
+        </div>
+        <div class="toc-body">
+          {{ .TableOfContents }}
+        </div>
+      </div>
+    </aside>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

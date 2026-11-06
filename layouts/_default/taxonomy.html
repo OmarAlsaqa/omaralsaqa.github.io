@@ -1,0 +1,43 @@
+{{ define "main" }}
+<div class="container page-content">
+  <div class="section-top-row" style="margin-bottom: 2rem;">
+    <div>
+      <div class="post-meta" style="margin-bottom: 0.5rem;">
+        <a href="/tags/">← All Topics</a>
+        <span>•</span>
+        <span>Tag Archive</span>
+      </div>
+      <h1 class="hero-name" style="font-size: 2.4rem; margin-bottom: 0.5rem;">
+        #{{ .Title }}
+      </h1>
+      <p style="color: var(--text-secondary); font-size: 1.05rem;">
+        Showing {{ len .Pages }} {{ if eq (len .Pages) 1 }}post{{ else }}posts{{ end }} tagged with #{{ .Title }}.
+      </p>
+    </div>
+  </div>
+
+  <div class="post-list">
+    {{ range .Pages }}
+      <article class="post-entry">
+        <div class="post-meta">
+          <span>{{ .Date.Format "January 2, 2006" }}</span>
+          <span>•</span>
+          <span>{{ .ReadingTime }} min read</span>
+        </div>
+
+        <h2 class="post-title">
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h2>
+
+        <p class="post-excerpt">
+          {{ with .Description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}
+        </p>
+
+        <div style="margin-top: 0.85rem;">
+          <a href="{{ .RelPermalink }}" class="action-btn">Read Post →</a>
+        </div>
+      </article>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

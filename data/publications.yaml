@@ -1,0 +1,65 @@
+- id: alsaqa2026geovig
+  title: "GeoViG: Geometry-Aware Graph Reasoning for Mobile Vision Tasks in Natural and Medical Images"
+  authors: "Omar Alsaqa, Emad A. Mohammed, Saiqa Aleem"
+  venue: "Accepted, IEEE EMBC 2026"
+  venue_url: "https://embc.embs.org/2026/"
+  year: 2026
+  selected: true
+  type: "Conference"
+  tags: ["GNN", "Vision"]
+  summary: "Introduces GeoViG, a geometry-aware graph reasoning architecture designed specifically for mobile vision tasks across natural and medical imaging domains, optimizing computational efficiency and geometric feature representation."
+  links:
+    - name: "Conference Info"
+      url: "https://embc.embs.org/2026/"
+  bibtex: |
+    @article{alsaqa2026geovig,
+      title={GeoViG: Geometry-Aware Graph Reasoning for Mobile Vision Tasks in Natural and Medical Images},
+      author={Alsaqa, Omar and Mohammed, Emad A. and Aleem, Saiqa},
+      journal={Accepted, IEEE EMBC 2026},
+      year={2026},
+      selected={true}
+    }
+
+- id: alsaqa2025bliss
+  title: "BLISS: Bandit Layer Importance Sampling Strategy for Efficient Training of Graph Neural Networks"
+  authors: "Omar Alsaqa, Linh Thi Hoang, Muhammed Fatih Balin"
+  venue: "NeurIPS 2025, MusIML Workshop"
+  venue_url: "https://openreview.net/forum?id=VaHubA7Pwv"
+  year: 2025
+  selected: true
+  type: "Workshop"
+  tags: ["GNN", "RL"]
+  summary: "Proposes BLISS, a multi-armed bandit-based layer-wise importance sampling algorithm for GNN training that balances sample variance and computational cost, speeding up training by up to 15% with improved accuracy."
+  links:
+    - name: "OpenReview"
+      url: "https://openreview.net/forum?id=VaHubA7Pwv"
+  bibtex: |
+    @inproceedings{alsaqa2025bliss,
+      title={BLISS: Bandit Layer Importance Sampling Strategy for Efficient Training of Graph Neural Networks},
+      author={Alsaqa, Omar and Hoang, Linh Thi and Balin, Muhammed Fatih},
+      booktitle={NeurIPS 2025, MusIML Workshop},
+      year={2025},
+      url={https://openreview.net/forum?id=VaHubA7Pwv}
+    }
+
+- id: abououf2022multimodal
+  title: "Multimodal System for Driver Distraction Detection and Elimination"
+  authors: "Abdulrahman AbouOuf, Ibrahim Sobh, Mohammad Nasser, Omar Alsaqa, Omar Elezaby, John F. W. Zaki"
+  venue: "IEEE Access"
+  venue_url: "https://doi.org/10.1109/ACCESS.2022.3188715"
+  year: 2022
+  selected: true
+  type: "Journal"
+  tags: ["Vision", "NLP"]
+  summary: "A robust multimodal deep learning system combining computer vision, audio analysis, and sensor telemetry to detect and mitigate driver distraction in real-time."
+  links:
+    - name: "IEEE Xplore"
+      url: "https://doi.org/10.1109/ACCESS.2022.3188715"
+  bibtex: |
+    @article{abououf2022multimodal,
+      title={Multimodal System for Driver Distraction Detection and Elimination},
+      author={AbouOuf, Abdulrahman and Sobh, Ibrahim and Nasser, Mohammad and Alsaqa, Omar and Elezaby, Omar and Zaki, John F. W.},
+      journal={IEEE Access},
+      year={2022},
+      url={https://doi.org/10.1109/ACCESS.2022.3188715}
+    }

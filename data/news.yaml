@@ -1,0 +1,46 @@
+- title: "Selected for the Award for Outstanding Work at the Graduate Level!"
+  date: "2026-05-19"
+  category: "Award"
+  summary: "Selected to receive the Award for Outstanding Work at the Graduate Level at the Spring 2026 convocation ceremony at Wilfrid Laurier University."
+
+- title: "Joined Toronto Metropolitan University as a Research Assistant!"
+  date: "2026-05-05"
+  category: "Position"
+  summary: "Joined TMU as a Research Assistant in the Department of Electrical, Computer, & Biomedical Engineering under Dr. Rasha Kashef (Mitacs Accelerate with FenderAI)."
+
+- title: "Applied for PGWP and obtained WP-EXT status"
+  date: "2026-05-04"
+  category: "Status"
+  summary: "Applied for the Post-Graduation Work Permit (PGWP) on May 4, 2026, and authorized to work full-time under WP-EXT status."
+
+- title: "Took the CELPIP-General exam and received scores"
+  date: "2026-05-01"
+  category: "Milestone"
+  summary: "Achieved an average score of 9 on the CELPIP-General English proficiency exam (Listening: 11, Reading: 9, Writing: 8, Speaking: 8)."
+
+- title: "GeoViG paper accepted at IEEE EMBC 2026!"
+  date: "2026-04-15"
+  category: "Publication"
+  summary: "Our paper, 'GeoViG: Geometry-Aware Graph Reasoning for Mobile Vision Tasks in Natural and Medical Images', has been accepted for presentation at IEEE EMBC 2026 in Toronto, Canada."
+
+- title: "Successfully defended Master's thesis on Geometry-Aware Vision GNNs!"
+  date: "2026-03-23"
+  category: "Defense"
+  summary: "Defended my Master's thesis on Geometry-Aware Vision GNNs at Wilfrid Laurier University with supervisor Prof. Emad A. Mohammed."
+
+- title: "BLISS paper accepted to NeurIPS 2025 MusIML Workshop!"
+  date: "2025-11-01"
+  category: "Publication"
+  summary: "Our work 'BLISS: Bandit Layer Importance Sampling Strategy for Efficient Training of Graph Neural Networks' accepted at NeurIPS 2025 MusIML Workshop."
+  link: "https://openreview.net/forum?id=VaHubA7Pwv"
+
+- title: "Started Master's of Applied Computing at Wilfrid Laurier University"
+  date: "2024-09-01"
+  category: "Academic"
+  summary: "Begun thesis-based Master's research at Wilfrid Laurier University focusing on Geometry-Aware GNNs."
+
+- title: "Multimodal Driver Distraction paper published in IEEE Access"
+  date: "2022-07-06"
+  category: "Publication"
+  summary: "Our paper 'Multimodal System for Driver Distraction Detection and Elimination' is officially published in IEEE Access."
+  link: "https://doi.org/10.1109/ACCESS.2022.3188715"

@@ -1,0 +1,33 @@
+{{ define "main" }}
+<div class="container page-content">
+  <div class="section-top-row" style="margin-bottom: 2rem;">
+    <div>
+      <h1 class="hero-name" style="font-size: 2.4rem; margin-bottom: 0.5rem;">News &amp; Updates</h1>
+      <p style="color: var(--text-secondary); font-size: 1.05rem;">
+        Timeline of academic milestones, paper acceptances, awards, and career announcements.
+      </p>
+    </div>
+  </div>
+
+  <div class="editorial-timeline">
+    {{ range hugo.Data.news }}
+      <div class="timeline-entry">
+        <div class="timeline-date-col">
+          <span class="timeline-date">{{ .date }}</span>
+        </div>
+        <div class="timeline-content-col">
+          <h2 class="timeline-heading">{{ .title }}</h2>
+          <p class="timeline-body">{{ .summary }}</p>
+          {{ with .link }}
+            <div style="margin-top: 0.5rem;">
+              <a href="{{ . }}" target="_blank" rel="noopener" class="action-btn" style="font-size: 0.78rem; padding: 0.2rem 0.6rem;">
+                View Details ↗
+              </a>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

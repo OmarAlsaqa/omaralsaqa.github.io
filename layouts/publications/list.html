@@ -1,0 +1,94 @@
+{{ define "main" }}
+<div class="container page-content">
+  <div class="section-top-row" style="margin-bottom: 2rem;">
+    <div>
+      <h1 class="hero-name" style="font-size: 2.4rem; margin-bottom: 0.5rem;">Publications</h1>
+      <p style="color: var(--text-secondary); font-size: 1.05rem;">
+        Selected peer-reviewed articles, conference proceedings, and workshop papers.
+      </p>
+    </div>
+  </div>
+
+  <!-- Interactive Tag Filter Bar (Broad Research Areas) -->
+  <div class="filter-bar" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2.5rem;">
+    <button class="action-btn tag-filter-btn active" data-tag="all" onclick="filterPublications('all', this)">All ({{ len hugo.Data.publications }})</button>
+    {{ $primaryOrder := slice "GNN" "Vision" "RL" "NLP" }}
+    {{ $allTags := slice }}
+    {{ range hugo.Data.publications }}
+      {{ range .tags }}
+        {{ $allTags = $allTags | append . }}
+      {{ end }}
+    {{ end }}
+    {{ $uniqTags := $allTags | uniq }}
+    {{/* First render primary broad categories in defined order */}}
+    {{ range $primaryOrder }}
+      {{ if in $uniqTags . }}
+        <button class="action-btn tag-filter-btn" data-tag="{{ . }}" onclick="filterPublications('{{ . }}', this)"><span class="tag-hash">#</span>{{ . }}</button>
+      {{ end }}
+    {{ end }}
+    {{/* Then render any other unique tags if added in the future */}}
+    {{ range ($uniqTags | sort) }}
+      {{ if not (in $primaryOrder .) }}
+        <button class="action-btn tag-filter-btn" data-tag="{{ . }}" onclick="filterPublications('{{ . }}', this)"><span class="tag-hash">#</span>{{ . }}</button>
+      {{ end }}
+    {{ end }}
+  </div>
+
+  <div class="publications-editorial-list">
+    {{ range $index, $pub := hugo.Data.publications }}
+      <article class="pub-editorial-entry" id="{{ $pub.id }}" data-tags="{{ delimit $pub.tags "," }}">
+        <div class="pub-index-col">
+          <span class="pub-counter">0{{ add $index 1 }}</span>
+        </div>
+
+        <div class="pub-body-col">
+          <div class="pub-meta-row">
+            {{ with $pub.venue_url }}
+              <a href="{{ . }}" target="_blank" rel="noopener" class="venue-badge venue-link">
+                {{ $pub.venue }} ({{ $pub.year }})
+              </a>
+            {{ else }}
+              <span class="venue-badge">{{ $pub.venue }} ({{ $pub.year }})</span>
+            {{ end }}
+            <span class="type-badge">{{ $pub.type }}</span>
+          </div>
+
+          <h2 class="pub-heading">{{ $pub.title }}</h2>
+
+          <div class="pub-authors-line">
+            {{ $authors := replace $pub.authors "Omar Alsaqa" "<strong class='author-me'>Omar Alsaqa</strong>" }}
+            {{ $authors = replace $authors "O. Alsaqa" "<strong class='author-me'>Omar Alsaqa</strong>" }}
+            {{ $authors | safeHTML }}
+          </div>
+
+          <p class="pub-abstract">{{ $pub.summary }}</p>
+
+          <div class="pub-tags-row">
+            {{ range $pub.tags }}
+              <button class="tag-pill" onclick="filterPublications('{{ . }}')">{{ . }}</button>
+            {{ end }}
+          </div>
+
+          <div class="pub-actions-row">
+            {{ range $pub.links }}
+              <a href="{{ .url }}" target="_blank" rel="noopener" class="action-btn">
+                {{ .name }} ↗
+              </a>
+            {{ end }}
+            <button class="action-btn" onclick="toggleBibtex('{{ $pub.id }}')">
+              BibTeX
+            </button>
+          </div>
+
+          <div class="bibtex-drawer" id="bibtex-{{ $pub.id }}">
+            <button class="action-btn bibtex-copy-btn" onclick="copyBibtex('{{ $pub.id }}', this)">
+              Copy
+            </button>
+            <pre class="bibtex-code" id="bibtex-code-{{ $pub.id }}">{{ $pub.bibtex }}</pre>
+          </div>
+        </div>
+      </article>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
